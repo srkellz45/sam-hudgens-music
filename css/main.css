@@ -187,14 +187,16 @@ span:hover {
     margin: 0 auto;
 }
 
-.header h1 {
+.header .logo {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 50px;
-font-family: 'Gravitas One', cursive;
-    font-style: normal;
-    font-weight: 200;
+    width: 350px;
    
+}
+
+.center {
+    text-align: center;
 }
 
 
@@ -292,6 +294,20 @@ font-family: 'Gravitas One', cursive;
         max-width: 400px;
     }
     
+    .track-links {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+   .track-info  h2{
+       font-size: 15px;
+    }
+    
+    .track-info  h3{
+       font-size: 24px;
+    }
+    
 }
 
 .track-info {
@@ -305,7 +321,7 @@ font-family: 'Gravitas One', cursive;
 }
 
 .track-info h2 {
-    font-size: 3rem;
+    font-size: 40px;
 }
 
 .song-link {
@@ -324,9 +340,6 @@ font-family: 'Gravitas One', cursive;
 
 }
 
-.track-links {
-    margin-top: 35px;
-}
 
 .soundcloud {
     width: 75px;
