@@ -124,14 +124,23 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script type="text/javascript" src="js/fullpage.min.js"></script>
+<script type="text/javascript" src="js/fullpage.min.js"></script>
+
   <script>
     
 //    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 //    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
     
     $(document).ready(function() {
-	$('#fullpage').fullpage({
+   var isPhoneDevice = "ontouchstart" in document.documentElement; 
+        
+    $(document).ready(function() {
+        if(isPhoneDevice){
+           console.log("mobile");
+        }
+            else{
+        //desktop 
+         $('#fullpage').fullpage({
 		//options here
         licenseKey: '70EA3FEA-1D3D42F9-9B1ED0EE-685729D3',
 		autoScrolling: true,
@@ -162,10 +171,20 @@
 	normalScrollElementTouchThreshold: 5,
 	bigSectionsDestination: null,
 	});
+v
+    $('#fullpage').fullpage(); 
+            }
+        });
 
+//if it is not a phone device...
+if(!isPhoneDevice){
+    //initializing fullpage...
+   
 	//methods
 	$.fn.fullpage.setAllowScrolling(false);
-        $('#fullpage').fullpage(); 
+        
+}   
+	
 });
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
