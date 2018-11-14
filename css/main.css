@@ -298,7 +298,7 @@ span:hover {
         width: 90%;
         margin: 0 auto;
         text-align: center;
-        padding-bottom: 40px;
+        padding-bottom: 70px;
     }
     
    .track-info  h2{
@@ -342,6 +342,9 @@ span:hover {
 
 }
 
+.track-links {
+    padding-bottom: 70px;
+}
 
 .soundcloud {
     width: 75px;
