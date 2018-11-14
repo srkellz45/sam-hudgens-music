@@ -43,12 +43,32 @@
             <span class="social-icon fa fa-spotify fa-2x"></span>
         </div>
         <a id="mailto" href="#"> 
-        <span class="text">Get In Touch!</span>
-        <span class="icon">
-        <i class="fa fa-envelope-o"></i></span> 
-  </a>
-            </div>
+            <span class="text">Get In Touch!</span>
+            <span class="icon">
+            <i class="fa fa-envelope-o"></i></span> 
+        </a>
+        </div>
     </div>
+    <div class="section header fp-auto-height-responsive">
+        <div class="container">
+        <h1>SAM HUDGENS</h1>
+            
+        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            
+        <div class="icons center-block">
+            <span class="social-icon fa fa-twitter fa-2x"></span>
+            <span class="social-icon fa fa-instagram fa-2x"></span>
+            <span class="social-icon fa fa-soundcloud fa-2x"></span>
+            <span class="social-icon fa fa-youtube-play fa-2x"></span>
+            <span class="social-icon fa fa-spotify fa-2x"></span>
+        </div>
+        <a id="mailto" href="#"> 
+          <span class="text">Get In Touch!</span>
+          <span class="icon"><i class="fa fa-envelope-o"></i></span> 
+        </a>
+        </div>
+    </div>
+      
 	<div class="section blue fp-auto-height-responsive">
         <div class="container">
                 <div class="row">
@@ -135,16 +155,16 @@
    var isPhoneDevice = "ontouchstart" in document.documentElement; 
         
     $(document).ready(function() {
-        if(isPhoneDevice){
-           console.log("mobile");
-        }
-            else{
-        //desktop 
-         $('#fullpage').fullpage({
-		//options here
-        licenseKey: '70EA3FEA-1D3D42F9-9B1ED0EE-685729D3',
-		autoScrolling: true,
-        css3: true,
+    if(isPhoneDevice){
+        console.log("mobile");
+    }
+    else {
+    //desktop 
+    $('#fullpage').fullpage({
+    //options here
+    licenseKey: '70EA3FEA-1D3D42F9-9B1ED0EE-685729D3',
+    autoScrolling: true,
+    css3: true,
 	scrollingSpeed: 700,
 	autoScrolling: true,
 	fitToSection: true,
@@ -173,7 +193,7 @@
 	});
 v
     $('#fullpage').fullpage(); 
-            }
+    }
         });
 
 //if it is not a phone device...
