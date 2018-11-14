@@ -311,7 +311,8 @@ span:hover {
 }
 
 .track-info {
-    padding: 50px 0px;
+    padding-top: 50px;
+    padding-bottom: 25px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
