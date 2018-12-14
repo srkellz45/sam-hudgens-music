@@ -88,6 +88,10 @@ textarea {
 
 }
 
+.beige {
+  background:  #e69958;
+}
+
 .red {
     background: red;
 }
@@ -197,6 +201,16 @@ span:hover {
 
 .center {
     text-align: center;
+    width:100%;
+    display:block;
+    margin:auto;
+}
+
+.home-photo {
+    width: 600px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    border-radius: 5px;
 }
 
 
@@ -236,24 +250,10 @@ span:hover {
 #mailto span.icon .fa-envelope-o {
   font-size: 2em;
 }
-#mailto:hover {
-  background: rgba(10, 10, 10, 0.1);
-  border-color: rgba(10, 10, 10, 0.1 );
-  width: 60px;
-  border-radius: 50%;
-    transition: 0.5s;
-}
 
-#mailto:hover .text{
- display: none;
-    transition: 0.5s;
-}
-
-#mailto:hover .icon {
-  color: #fff;
-  -webkit-transform: translate(-16px, -105px);
-          transform: translate(-16px, -105px);
-    transition: 0.5s;
+.bottom-buffer {
+    position: aboslute;
+    bottom: 20px;
 }
 
 
