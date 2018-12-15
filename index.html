@@ -68,7 +68,7 @@
         
         </div>
     </div> 
-    <div class="section beige fp-auto-height-responsive" id="day-by-day" data-anchor="section2">
+    <div class="section beige fp-auto-height-responsive" id="eve" data-anchor="section2">
         <div class="container">
                 <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -108,47 +108,7 @@
             </div>
         </div>
     </div>
-      <div class="section purple fp-auto-height-responsive" data-anchor="section3">
-        <div class="container">
-                <div class="row">
-                <div class="col-lg-6 col-md-6">
-                   
-                    <img class="album-art img-fluid" src="img/slow.jpg" alt="">
-                
-                </div>   
-                <div class="col-lg-6 col-md-6">
-                    <div class="track-info">
-                        <h2>Slow Me Down</h2>
-                        <h3>Prov ft. Sam Hudgens</h3>
-                    </div>
-                     <div class="track-links">
-                       <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/387958937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>    
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </div>
-    <div class="section orange " data-anchor="section4">
-        <div class="container">
-                <div class="row">
-                <div class="col-lg-6 col-md-6">
-                   
-                    <img class="album-art img-fluid" src="img/ckradio.jpg" alt="">
-                
-                </div>   
-                <div class="col-lg-6 col-md-6">
-                    <div class="track-info">
-                        <h2>CK FM</h2>
-                        <h3>Production & Sound Engineering</h3>
-                    </div>
-                    <div class="track-links">
-                       <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/523945536&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>   
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </div>
-	
+  
     
     </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -164,60 +124,53 @@
 //    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 //    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
     
-    $(document).ready(function() {
-   var isPhoneDevice = "ontouchstart" in document.documentElement; 
-        
-    $(document).ready(function() {
-    if(isPhoneDevice){
-        console.log("mobile");
-    }
-    else {
-    //desktop 
-    $('#fullpage').fullpage({
-    //options here
-    licenseKey: '70EA3FEA-1D3D42F9-9B1ED0EE-685729D3',
-    autoScrolling: true,
-    css3: true,
-	scrollingSpeed: 800,
-	fitToSection: true,
-	fitToSectionDelay: 1000,
-	scrollBar: false,
-	easing: 'easeInOutCubic',
-	easingcss3: 'ease',
-	loopBottom: false,
-	loopTop: false,
-	loopHorizontal: false,
-	continuousVertical: true,
-	continuousHorizontal: false,
-	scrollHorizontally: false,
-	interlockedSlides: false,
-	dragAndMove: false,
-	offsetSections: false,
-	resetSliders: true,
-	fadingEffect: false,
-	normalScrollElements: '#element1, .element2',
-	scrollOverflow: false,
-	scrollOverflowReset: false,
-	scrollOverflowOptions: null,
-	touchSensitivity: 10,
-	normalScrollElementTouchThreshold: 5,
-	bigSectionsDestination: null,
-    anchors: ['section1', 'section2', 'section3', 'section4']
-	});
-v
-    $('#fullpage').fullpage(); 
-    }
-        });
+    $(document).ready(function () {
+	var isPhoneDevice = "ontouchstart" in document.documentElement;
 
-//if it is not a phone device...
-if(!isPhoneDevice){
-    //initializing fullpage...
-   
-	//methods
+	if (isPhoneDevice) {
+		$('.home-arrow').hide();
+	}
+	else {
+		//desktop 
+		$('#fullpage').fullpage({
+		//options here
+		licenseKey: '70EA3FEA-1D3D42F9-9B1ED0EE-685729D3',
+		autoScrolling: true,
+		css3: true,
+		scrollingSpeed: 800,
+		fitToSection: true,
+		fitToSectionDelay: 1000,
+		scrollBar: false,
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease',
+		loopBottom: false,
+		loopTop: false,
+	    loopHorizontal: false,
+		continuousVertical: true,
+		continuousHorizontal: false,
+		scrollHorizontally: false,
+		interlockedSlides: false,
+		dragAndMove: false,
+		offsetSections: false,
+		resetSliders: true,
+		fadingEffect: false,
+		normalScrollElements: '#element1, .element2',
+		scrollOverflow: false,
+		scrollOverflowReset: false,
+		scrollOverflowOptions: null,
+		touchSensitivity: 10,
+		normalScrollElementTouchThreshold: 5,
+		bigSectionsDestination: null,
+		anchors: ['section1', 'section2', 'section3', 'section4']
+	});
+			
+	$('#fullpage').fullpage();
+
 	$.fn.fullpage.setAllowScrolling(false);
-        
-}   
 	
+	}
+
+
 });
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
