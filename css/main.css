@@ -214,6 +214,10 @@ span:hover {
     border-radius: 5px;
 }
 
+.home-width: {
+    550px;
+}
+
 .full-width: {
     width: 100% !important;
 }
@@ -408,6 +412,11 @@ span:hover {
 
 .clearfix:after {
     clear: both;
+}
+
+.bottom-buffer {
+    position: sticky;
+    margin-bottom: 75px;
 }
 
 
