@@ -188,6 +188,7 @@ span:hover {
 	border-color: rgba(10, 10, 10, 0.1);
 }
 
+
 .center-block {
     margin: 0 auto;
 }
@@ -249,12 +250,13 @@ span:hover {
   border-radius: 50px;
   overflow: hidden;
   transition: all .5s ease-in-out;
-  transform-origins: 0% 0%;
-  padding-top: 
+   
 }
+
 #mailto span {
   position: absolute;
 }
+
 #mailto span:first-child {
   top: 12px;
   left: 0;
