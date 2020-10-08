@@ -64,37 +64,44 @@ textarea {
 #top, #bottom, #left, #right {
 	background: #FFF;
 	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 15px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
+}
+#left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+}
+#left { left: 0; }
+#right { right: 0; }
 		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 15px;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
+#top, #bottom {
+    left: 0; right: 0;
+    height: 15px;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
 
 
 .purple {
-    background: #3d0080;
+    background-color: #3d0080;
 }
 
 .blue {
-     background: #28bff8;
+     background-color: #28bff8;
+}
 
+.yellow {
+    background-color: #f2c02d;
 }
 
 .beige {
-  background:  #e69958;
+  background-color:  #e69958;
+}
+
+.pink {
+    background-color: #fb91a3;
 }
 
 .bluish {
-    background: #7c88c7;
+    background-color: #7c88c7;
 }
 
 .red {
@@ -103,6 +110,7 @@ textarea {
 
 .zindex {
     z-index: 1;
+    display: none;
 }
 
 body {
@@ -501,3 +509,8 @@ body {
     }
 }
 
+@media only screen and (min-width: 768px)  {
+    .zindex {
+        display: block;
+    }
+}
