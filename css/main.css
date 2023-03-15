@@ -154,18 +154,11 @@ body {
 	}
 }
 
-.intro {
-  text-align: center;
-  width: 475px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  font-family: 'Source Code Pro', monospace;
-}
-
 .icons {
 	text-align: center;
-	max-width: 500px;
-	max-height: 300px;
+	max-width: 320px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-icon {
@@ -177,7 +170,7 @@ body {
 	height: 50px;
 	text-align: center;
 	padding-top: 12px;
-	margin: 10px;
+	margin: 10px 5px;
 	-webkit-transition: all .5s ease 0s;
 	-moz-transition: all .5s ease 0s;
 	-o-transition: all .5s ease 0s;
@@ -222,8 +215,6 @@ body {
   margin: 20px auto;
   position: relative;
   display: block;
-  width: 170px;
-  height: 50px;
   text-decoration: none;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -232,240 +223,18 @@ body {
   letter-spacing: 1px;
   background: none;
   color: #fff;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50px;
   overflow: hidden;
   transition: all .5s ease-in-out;
-   
-}
-
-#mailto span {
-  position: absolute;
-}
-
-#mailto span:first-child {
-  top: 12px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#mailto span.icon {
-  bottom: -100px;
-}
-
-#mailto span.icon .fa-envelope-o {
-  font-size: 2em;
-}
-
-.album-art {
-  display: block;
-  box-shadow: 0 12px 32px rgba(0,0,0,.5);
-  max-height: calc(100vh - 128px);
-  margin: 40px auto;
-}
-
-
-@media only screen and (max-width: 600px) {
-   .album-art {
-    box-shadow: 0 12px 32px rgba(0,0,0,.5);
-    width: 300px;
-    margin: 50px auto;
-}
-    .track-info {
-    text-align: center;
-}
-    .intro {
-        width: 350px;
-
-    }
-    
-    h1 {
-        padding-top: 50px
-    }
-    
-    .icons {
-        max-width: 400px;
-    }
-    
-    .track-links {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-        padding-bottom: 70px;
-    }
-    
-   .track-info  h2{
-       font-size: 15px;
-    }
-    
-    .track-info  h3{
-       font-size: 24px;
-    }
-}
-
-.track-info {
-  padding-top: 50px;
-  padding-bottom: 25px;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.track-info h2 {
-  font-size: 40px;
-}
-
-.song-link {
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  color: #2194E0;
-  border: 2px solid #2194E0;
-  font-size: 24px;
-  border-radius: 0.3em;
-  background: #fff;
-  width: 200px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.track-links {
-  padding-bottom: 70px;
-}
-
-.soundcloud {
-  width: 75px;
-}
-
-.orange {
-  background: #c5480d;
+  padding: 10px 30px; 
+  max-width: fit-content; 
 }
 
 .hidden {
   display: none !important;
 }
 
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; 
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; 
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.bottom-buffer {
-  position: sticky;
-  margin-bottom: 75px;
-}
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-}
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-  .zindex {
-    display: block;
-  }
-}
 
 .video-wrapper {
   position: relative;
