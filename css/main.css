@@ -256,6 +256,7 @@ body {
   margin-bottom: 20px; 
   color: #fff; 
   text-transform: uppercase;
+  font-size: 1.5rem; 
 }
 
 .title {
@@ -266,8 +267,10 @@ body {
   margin-bottom: 10px; 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .header-text {
     margin-bottom: 40px; 
+    font-size: 2rem; 
+
   }
 }
