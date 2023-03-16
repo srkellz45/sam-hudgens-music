@@ -8,15 +8,6 @@
   <meta name="description" content="Sam Hudgens is an singer-songwriter, producer, and multi-instrumentalist based in Chicago, IL. His new single 'Eve' is out now on all music platforms.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131128320-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-131128320-1');
-    </script>
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -117,71 +108,10 @@
 </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script type="text/javascript" src="js/fullpage.min.js"></script>
-
-  <script>
-
-    
-    
-    $(document).ready(function () {
-	var isPhoneDevice = "ontouchstart" in document.documentElement;
-
-	if (screen.width < 768) {
-		$('.home-arrow').hide();
-        $('.home-photo').addClass('full-width');
-	}
-	else {
-		//desktop 
-		$('#fullpage').fullpage({
-		//options here
-		licenseKey: '70EA3FEA-1D3D42F9-9B1ED0EE-685729D3',
-		autoScrolling: true,
-		css3: true,
-		scrollingSpeed: 800,
-		fitToSection: true,
-		fitToSectionDelay: 1000,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
-		loopBottom: false,
-		loopTop: false,
-	    loopHorizontal: false,
-		continuousVertical: true,
-		continuousHorizontal: false,
-		scrollHorizontally: false,
-		interlockedSlides: false,
-		dragAndMove: false,
-		offsetSections: false,
-		resetSliders: true,
-		fadingEffect: false,
-		normalScrollElements: '#element1, .element2',
-		scrollOverflow: false,
-		scrollOverflowReset: false,
-		scrollOverflowOptions: null,
-		touchSensitivity: 10,
-		normalScrollElementTouchThreshold: 5,
-		bigSectionsDestination: null
-	});
-			
-	$('#fullpage').fullpage();
-
-	$.fn.fullpage.setAllowScrolling(false);
-        
-    
-    $(document).scroll(function() {
-      $( ".main-box" ).removeClass('bottom-buffer');
-    });
-	
-	}
-
-
-});
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
