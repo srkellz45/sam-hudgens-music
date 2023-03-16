@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="container d-table d-md-none">
+        <div class="container d-block d-sm-none">
             <div class="row">
                 <div class="col-12 text-center pt-5 mt-5 pb-0">
                     <h2 class="header-text">"Time" music video</h2>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </div> 
-    <div class="section yellow fp-auto-height-responsive py-5 py-lg-0 d-none d-md-table">
+    <div class="section yellow fp-auto-height-responsive py-5 py-lg-0 d-none d-sm-table">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -98,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div class="section light-blue fp-auto-height-responsive py-5 py-lg-0 d-none d-md-table">
+    <div class="section light-blue fp-auto-height-responsive py-5 py-lg-0 d-none d-sm-table">
         <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -130,7 +130,7 @@
     $(document).ready(function () {
 	var isPhoneDevice = "ontouchstart" in document.documentElement;
 
-	if (isPhoneDevice) {
+	if (screen.width < 768) {
 		$('.home-arrow').hide();
         $('.home-photo').addClass('full-width');
 	}
