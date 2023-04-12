@@ -45,7 +45,6 @@ $(document).ready(function () {
         var win = $(this); //this = window
         if (win.width() <= 768) { 
             fullpage_api.destroy('all');
-            console.log('small screen')
         } else {
            //desktop 
                 
